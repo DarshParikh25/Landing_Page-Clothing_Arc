@@ -1,0 +1,238 @@
+:root{
+    --font-caveat: 'Caveat', cursive;
+    --font-josefin-sans: 'Josefin Sans', sans-serif;
+    --font-playfair-display: 'Playfair Display', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: rgb(209, 139, 10); */
+    overflow: hidden;
+}
+
+.logo{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: 4;
+    top: -55px;
+    background-color: rgb(215, 166, 40);
+    border-radius: 0 0 50% 50%;
+    left: -25px;
+}
+
+.hero-img{
+    height: calc(100vh - 50px);
+    position: relative;
+    z-index: 3;
+    left: 50px;
+    top: 63px;
+}
+
+.yellow{
+    background-color: rgb(209, 139, 10);
+    width: 24.5%;
+    height: 100vh;
+}
+
+.nav-yellow-bg{
+    background-color: rgb(209, 139, 10);
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 15px;
+}
+
+/* .nav-yellow-bg{
+    background-color: #e1ad5c;
+    width: calc(100vw - 13vw);
+    height: 87vh;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 2;
+} */
+
+.flex-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.navbar{
+    width: 100vw;
+    background-color: rgb(215, 166, 40);
+    position: relative;
+    top: 15px;
+}
+
+.flex-nav{
+    height: 100px;
+    position: relative;
+    left: -210px;
+    z-index: 1;
+    background-color: rgb(215, 166, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    padding-left: 525px;
+}
+
+li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: large;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-josefin-sans);
+}
+
+ul > :first-child{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: #fff;
+}
+
+ul > li :hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: #fff;
+}
+
+.content{
+    position: absolute;
+    top: 35%;
+    left: 52%;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+}
+
+h1{
+    line-height: 75px;
+    margin-bottom: 10px;
+}
+
+h1 > :first-child{
+    font-weight: 900;
+    color: #d89628;
+    font-size: 6rem;
+    font-family: var(--font-playfair-display);
+}
+
+h1 > :nth-child(2){
+    font-weight: 900;
+    font-size: xxx-large;
+    font-family: var(--font-josefin-sans);
+}
+
+.offer{
+    font-weight: 600;
+    font-size: x-large;
+    font-family: var(--font-josefin-sans);
+}
+
+.discount{
+    font-weight: 900;
+    font-size: x-large;
+    font-family: var(--font-josefin-sans);
+}
+
+.discount-info{
+    font-size: larger;
+    font-family: var(--font-josefin-sans);
+}
+
+.info{
+    font-size: x-large;
+    font-weight: 500;
+    font-family: var(--font-caveat);
+}
+
+button{
+    background-color: #d89628;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 12px 30px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: medium;
+    font-weight: 700;
+    font-family: var(--font-josefin-sans);
+}
+
+.button :hover{
+    cursor: pointer;
+    background-color: rgb(215, 166, 40);
+}
+
+/* .flex-para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    color: #fff;
+    width: 5vw;
+} */
+
+/* .flex-container :nth-child(5){
+    position: absolute;
+    top: 79vh;
+    left: 70px;
+    z-index: 5;
+} */
+
+
+/* .flex-para > :first-child{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--font-josefin-sans);
+}
+
+.sale{
+    font-weight: 900;
+    font-size: xxx-large;
+    font-family: var(--font-playfair-display);
+} */
+
+.flex-container :nth-child(5){
+    position: absolute;
+    z-index: 5;
+    top: 52vh;
+    left: -172px;
+    transform: rotate(-90deg);
+}
+
+.flex-para > :first-child,
+.sale{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--font-josefin-sans);
+    /* -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #000;
+    color: rgb(209, 139, 10); */
+    color: #000;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(215, 166, 40);
+    z-index: 2;
+    top: calc(100vh - 9vh);
+    color: #fff;
+    font-size: small;
+    font-family: var(--font-josefin-sans);
+}
